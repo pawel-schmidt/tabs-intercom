@@ -1,6 +1,6 @@
-import EventBus from './EventBus'
-import { STORAGE_KEY_PREFIX } from './consts'
-import { Fn, Intercom } from './types'
+import EventBus from './EventBus';
+import { STORAGE_KEY_PREFIX } from './consts';
+import { Fn, Intercom } from './types';
 
 export default class TabsIntercom implements Intercom {
   private registeredFunctions = new Set<string>();

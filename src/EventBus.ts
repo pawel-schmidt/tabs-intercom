@@ -1,5 +1,5 @@
-import { STORAGE_KEY_PREFIX, STORAGE_VALUE_DELIMITER } from './consts'
-import { Fn } from './types'
+import { STORAGE_KEY_PREFIX, STORAGE_VALUE_DELIMITER } from './consts';
+import { Fn } from './types';
 
 export default class EventBus {
   // TODO: consider using `WeakMap`

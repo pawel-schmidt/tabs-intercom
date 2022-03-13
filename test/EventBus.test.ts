@@ -1,17 +1,17 @@
-import EventBus from '../src/EventBus'
+import EventBus from '../src/EventBus';
 
 describe('EventBus', () => {
-  const localStoragePrototype = Object.getPrototypeOf(window.localStorage)
+  const localStoragePrototype = Object.getPrototypeOf(window.localStorage);
 
   it('works', () => {
-    const eventBus = new EventBus()
-    const key = 'hey123'
-    const setItemSpy = jest.spyOn(localStoragePrototype, 'setItem')
+    const eventBus = new EventBus();
+    const key = 'hey123';
+    const setItemSpy = jest.spyOn(localStoragePrototype, 'setItem');
 
-    eventBus.subscribe(key, () => null)
-    eventBus.emitMessage(key)
+    eventBus.subscribe(key, () => null);
+    eventBus.emitMessage(key);
 
-    expect(setItemSpy).toHaveBeenCalled()
-    setItemSpy.mockReset()
-  })
-})
+    expect(setItemSpy).toHaveBeenCalled();
+    setItemSpy.mockReset();
+  });
+});
