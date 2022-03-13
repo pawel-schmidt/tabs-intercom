@@ -1,11 +1,11 @@
 import EventBus from './EventBus';
 import { STORAGE_KEY_PREFIX } from './consts';
-import { Fn, Intercom } from './types';
+import { Fn, IEventBus, ITabsIntercom } from './types';
 
-export default class TabsIntercom implements Intercom {
+export default class TabsIntercom implements ITabsIntercom {
   private registeredFunctions = new Set<string>();
 
-  constructor(private eventBus: EventBus = new EventBus(STORAGE_KEY_PREFIX)) {}
+  constructor(private eventBus: IEventBus = new EventBus(STORAGE_KEY_PREFIX)) {}
 
   register<F extends Fn>(
     fn: F,

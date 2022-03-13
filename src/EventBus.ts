@@ -1,7 +1,7 @@
 import { STORAGE_KEY_PREFIX, STORAGE_VALUE_DELIMITER } from './consts';
-import { Fn } from './types';
+import { Fn, IEventBus } from './types';
 
-export default class EventBus {
+export default class EventBus implements IEventBus {
   // TODO: consider using `WeakMap`
   private subscribers = new Map<string, Fn<void>>();
 
