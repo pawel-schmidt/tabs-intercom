@@ -1,5 +1,4 @@
-import TabsIntercom from '../src';
-import EventBus from '../src/EventBus';
+import { TabsIntercom, EventBus } from '../src';
 
 jest.mock('../src/EventBus');
 const MockedEventBus = EventBus as jest.MockedClass<typeof EventBus>;

@@ -1,4 +1,4 @@
-import EventBus from '../src/EventBus';
+import { EventBus } from '../src';
 
 describe('EventBus', () => {
   const localStoragePrototype = Object.getPrototypeOf(window.localStorage);
