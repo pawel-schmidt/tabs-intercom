@@ -24,6 +24,11 @@ jobs:
           node-version: 12.x
           cache: 'pnpm'
 
+      - name: Install TabsIntercom deps & Build
+        run: |
+          pnpm install
+          pnpm build
+
       - name: Install example deps & Build
         run: |
           cd example
