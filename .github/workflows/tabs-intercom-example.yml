@@ -24,14 +24,11 @@ jobs:
           node-version: 12.x
           cache: 'pnpm'
 
-      - name: Navigate to example dir
-        run: cd example
-
-      - name: Install dependencies
-        run: pnpm install
-
-      - name: Build
-        run: pnpm build
+      - name: Install example deps & Build
+        run: |
+          cd example
+          pnpm install
+          pnpm build
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
