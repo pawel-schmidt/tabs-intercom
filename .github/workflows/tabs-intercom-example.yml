@@ -1,0 +1,40 @@
+name: tabs-intercom-example
+on:
+  push:
+    paths:
+      - 'example/**'
+  workflow_dispatch:
+jobs:
+  build:
+    name: Build and deploy Tabs Intercom Example on Github Pages
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Use PNPM
+        uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.32.3
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: 12.x
+          cache: 'pnpm'
+
+      - name: Navigate to example dir
+        run: cd example
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build
+        run: pnpm build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: main
+          folder: example/dist
