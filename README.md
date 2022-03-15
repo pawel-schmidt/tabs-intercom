@@ -5,7 +5,7 @@ Forget about emitting and listening to events — just register a function and c
 
 ![tabs-intercom-example](./docs/tabs-intercom-example.gif)
 
-[Demo - to be added soon!]()
+[Demo](https://pawel-schmidt.github.io/tabs-intercom/)
 
 ## Installation
 
