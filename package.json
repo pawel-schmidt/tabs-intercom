@@ -32,8 +32,30 @@
     "trailingComma": "es5"
   },
   "name": "tabs-intercom",
+  "description": "Call a function with params across multiple browser tabs",
   "author": "Pawel Schmidt",
   "module": "dist/tabs-intercom.esm.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pawel-schmidt/tabs-intercom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pawel-schmidt/tabs-intercom/issues"
+  },
+  "homepage": "https://github.com/pawel-schmidt/tabs-intercom#readme",
+  "keywords": [
+    "browser",
+    "tabs",
+    "cross-tab",
+    "windows",
+    "communication",
+    "intercom",
+    "broadcast",
+    "emit",
+    "emitter",
+    "local",
+    "storage"
+  ],
   "size-limit": [
     {
       "path": "dist/tabs-intercom.cjs.production.min.js",
