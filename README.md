@@ -132,4 +132,4 @@ To run tests, use `pnpm test` or `yarn test`.
 
 [MIT License](https://github.com/pawel-schmidt/tabs-intercom/blob/main/LICENSE)
 
-Copyright © 2022, Pawel Schmidt <pawel-schmidt@users.noreply.github.com> (https://github.com/pawel-schmidt)
+Copyright © 2022, [simplemented.com](https://simplemented.com)
