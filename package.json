@@ -31,7 +31,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "tabs-intercom",
+  "name": "@simplemented/tabs-intercom",
   "description": "Call a function with params across multiple browser tabs",
   "author": "Pawel Schmidt",
   "module": "dist/tabs-intercom.esm.js",
